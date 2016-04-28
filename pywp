@@ -32,7 +32,7 @@ def gethtml(url1):
 code1 = gethtml('https://www.baidu.com')#示例
 #提取内容
 content1 = re.findall('<h2 class="title"><a href="(.*)">(.*)</a></h2>',code1)#示例
-#追加的方式记录采集来的内容
+#追加记录采集来的内容
 f1 = open('contents1.txt','a+')
 #读取txt中的内容
 exist1 = f1.read()
